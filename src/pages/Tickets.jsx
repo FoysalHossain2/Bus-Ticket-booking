@@ -3,10 +3,12 @@ import {motion} from 'framer-motion'
 import TopLayout from '../Component/CommoneComponent/layout/TopLayout'
 import RootLayouts from '../Component/CommoneComponent/layout/RootLayouts'
 import Search from '../Component/CommoneComponent/Search'
+import Filter from '../Component/CommoneComponent/Filter'
+import SearchResult from '../Component/CommoneComponent/SearchResult'
 
 const Tickets = () => {
   return (
-    <div className='w-full space-y-12 pb-16'>
+     <div className='w-full space-y-12 pb-16'>
         {/* Top Layout */}
         <TopLayout 
             bgImg={"https://cdn.pixabay.com/photo/2020/09/21/11/41/bus-5589826_1280.jpg"} 
@@ -34,8 +36,13 @@ const Tickets = () => {
           <div className="w-full h-auto grid grid-cols-4 gap-16 relative">
 
             {/* Filter Section */}
+            <div className="col-span-1">
+              <Filter className="space-y-4 sticky top-52 z-20" />
+            </div>
+
 
             {/* Search Ticket */}
+            <SearchResult />
 
           </div>
 

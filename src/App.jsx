@@ -7,6 +7,7 @@ import {
 import RootLayout from "./Component/commonecomponent/RootLayout";
 import HomePage from './pages/HomePage'
 import Tickets from "./pages/Tickets";
+import Details from "./Component/CommoneComponent/common/ticket/detail/Details";
 
 
 const router = createBrowserRouter(
@@ -14,7 +15,10 @@ const router = createBrowserRouter(
     <Route>
       <Route path="/" element={<RootLayout />}>
         <Route index element={<HomePage />} />
-        <Route path="/bus_tickets" element={<Tickets />} />
+        <Route path="/bus-tickets" element={<Tickets />} />
+
+        {/* Details */}
+        <Route path="/bus-tickets/detail" element={<Details />} />
       </Route>
     </Route>
   )
