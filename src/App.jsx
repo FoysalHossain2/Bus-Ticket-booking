@@ -15,10 +15,10 @@ const router = createBrowserRouter(
     <Route>
       <Route path="/" element={<RootLayout />}>
         <Route index element={<HomePage />} />
-        <Route path="/bus-tickets" element={<Tickets />} />
+        <Route path="/bus_tickets" element={<Tickets />} />
 
         {/* Details */}
-        <Route path="/bus-tickets/detail" element={<Details />} />
+        <Route path="/bus_tickets/detail" element={<Details />} />
       </Route>
     </Route>
   )

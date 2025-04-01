@@ -102,7 +102,7 @@ const TicketCard = ({icon: Icon, busName, routeFrom, routeTo, arrivalTime, price
                 <span className="text-lg text-green-700 font-bold pt-0.5">{availableSeats}</span> seats available
             </h1>
 
-            <Link to={'/bus-tickets/detail'} className="w-fit px-5 py-1.5 bg-orange-400 hover:bg-transparent border-2 border-orange-500 rounded-xl text-sm font-medium text-neutral-50 flex items-center justify-center gap-x-2 hover:text-orange-300 ease-in-out duration-300">
+            <Link to={'/bus_tickets/detail'} className="w-fit px-5 py-1.5 bg-orange-400 hover:bg-transparent border-2 border-orange-500 rounded-xl text-sm font-medium text-neutral-50 flex items-center justify-center gap-x-2 hover:text-orange-300 ease-in-out duration-300">
                 Reserver Seat
             </Link>
         </div>
